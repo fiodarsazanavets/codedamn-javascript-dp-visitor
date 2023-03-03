@@ -16,7 +16,7 @@ var textToHtmlConverter = new TextToHtmlConverter();
 var htmlToTextConverter = new HtmlToTextConverter();
 
 console.log('MD text converted to HTML:');
-console.log(textToHtmlConverter.accept(visitor, mdText));
+console.log(textToHtmlConverter.processParagraphs(mdText));
 console.log('');
 console.log('HTML text converted to MD:');
-console.log(htmlToTextConverter.accept(visitor, htmlText));
+console.log(htmlToTextConverter.processParagraphs(htmlText));
